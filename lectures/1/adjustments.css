@@ -1,6 +1,5 @@
 html {
     background: black url(m66_croman_big.jpg) bottom center;
-    background-size: cover;
 }
 
 #intro {
@@ -23,7 +22,7 @@ html {
     line-height: .3;
     color: rgba(0,0,0,.7);
     text-shadow: none;
-    background: url(m66_croman_big.jpg) bottom;
+    background: url(img/m66_croman_big.jpg) bottom;
     padding:.6em 0 0;
     overflow: hidden;
 }
@@ -35,7 +34,7 @@ html {
     }
     
     #intro h1 {
-        background: url(logo.svg) no-repeat center;
+        background: url(intro.svg) no-repeat center;
         background-size:100% auto;
     }
 }
