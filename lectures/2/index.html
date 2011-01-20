@@ -147,6 +147,59 @@
 </div>
 
 <div class="slide">
+    <h2>HTML: Block Elements</h2>
+    <p>Block Elements start on a new line.</p>
+    <ul>
+        <li class="delayed"><code>&lt;h1&gt;</code> <code>&lt;h2&gt;</code> <code>&lt;h3&gt;</code> <code>&lt;h4&gt;</code> Headings</li>
+        <li class="delayed"><code>&lt;ol&gt;</code> <code>&lt;ul&gt;</code> <code>&lt;dl&gt;</code> List Definitions</li>
+        <li class="delayed"><code>&lt;div&gt;</code> Generic division containers</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>HTML: Inline Elements</h2>
+    <p>Inline Elements <strong>DO NOT</strong> start on a new line.</p>
+    <ul>
+        <li class="delayed"><code>&lt;a&gt;</code> Anchors (links)</li>
+        <li class="delayed"><code>&lt;img&gt;</code> Images</li>
+        <li class="delayed"><code>&lt;strong&gt;</code> Important emphasis</li>
+    </ul>
+</div>
+
+<div class="slide">
+	<h2>HTML: Nesting</h2>
+    <p>Semantics determine which elements can go where.</p>
+	<ul class="visualSupport">
+		<li class="delayed">
+			<img src="dom-tree.png" style="width:450px;" alt="Visual reference of DOM tree" />
+		</li>
+		<li class="delayed">
+			<pre>
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;sample title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="content"&gt;
+    &lt;h1&gt;Heading&lt;/h1&gt;
+    &lt;p&gt;paragraph
+      &lt;strong&gt;Important&lt;/strong&gt;
+      &lt;a href="page.html"&gt;Link&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;List Item 1
+        &lt;a href="page.html"&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+			</pre>
+		</li>
+	</ul>
+</div>
+
+<div class="slide">
     <h2>HTML: Attributes</h2>
     <p>What goes between &lt;TAGNAME and &gt;</p>
     <ul>
