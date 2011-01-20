@@ -27,10 +27,13 @@ html {
     overflow: hidden;
 }
 
-.slide dl dd {
+.slide dl dd, .slide dl dd ul {
     margin-left:2em;
 }
-.slide dl dd:before {
+.slide dl dd ul {
+	list-style: none;
+}
+.slide dl dd:before, .slide dl dd li:before {
     content: '\279C';
     color: #28bcbc;
     padding-right: .2em;
