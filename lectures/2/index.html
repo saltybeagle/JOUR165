@@ -23,6 +23,15 @@
 		<dd class="delayed">the text string that defines a unique document, web address</dd>
 		<dt>Home page</dt>
         <dd class="delayed">beginning of a particular Web document or collection of documents</dd>
+        <dt>Web browser</dt>
+        <dd class="delayed">a client program for navigating the web
+        	<ul>
+        		<li>Mozilla Firefox</li>
+        		<li>Apple Safari</li>
+        		<li>Microsoft Internet Explorer</li>
+        		<li>Google Chrome</li>
+        	</ul>
+        </dd>
         <dt>HTML</dt>
         <dd class="delayed">HyperText Markup Language, the language used to compose documents for Web delivery</dd>
         <dt>HTTP</dt>
@@ -37,6 +46,73 @@
         <li class="delayed"><code>&lt;h1&gt;page heading&lt;/h1&gt;</code></li>
         <li class="delayed"><code>&lt;p&gt;paragraph of text&lt;/p&gt;</code></li>
         <li class="delayed"><code>&lt;a href="http://google.com/"&gt;anchor/links&lt;/a&gt;</code></li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>HTML: Tools</h2>
+    <p>Authoring Tools</p>
+    <ul>
+        <li class="delayed">Text Editors
+        	<ul>
+        		<li>
+        			<a href="http://www.notepad.org/" title="Notepad website">Notepad</a>
+        		</li>
+        		<li>
+        			<a href="http://support.apple.com/kb/ht2523" title="Text Edit website">Text Edit</a>
+        		</li>
+        		<li>
+        			<a href="http://www.barebones.com/products/textwrangler/" title="TextWrangler website">Text Wrangler</a>
+        		</li>
+        	</ul>
+        </li>
+        <li class="delayed">WYSIWYG Editors
+        	<ul>
+        		<li>
+        			<a href="http://www.adobe.com/products/dreamweaver/" title="Adobe Dreamweaver website">Adobe Dreamweaver</a>
+        		</li>
+        		<li>
+        			<a href="http://www.microsoft.com/express/Web/" title="Microsoft Visual Web Developer website">Microsoft Visual Web Developer</a>
+        		</li>
+        		<li>
+        			<a href="http://macrabbit.com/espresso/" title="Espresso website">Espresso</a>
+        		</li>
+        		<li>
+        			<a href="http://www.medialab.com/" title="SiteGrinder website">SiteGrinder</a>
+        		</li>
+        	</ul>
+        </li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>HTML: Versions</h2>
+    <p></p>
+    <ul>
+        <li class="delayed">HTML 4.0
+        	<ul>
+        		<li>Current HTML specification</li>
+        	</ul>
+        </li>
+        <li class="delayed">XHTML 1.0
+        	<ul>
+        		<li>All elements must be <code>&lt;/closed&gt;</code></li>
+        		<li>All attributes to be "quoted"</li>
+        		<li>2 Categories
+        			<dl>
+        				<dt>Transitional</dt>
+        				<dd>Old, deprecated elements are allowed</dd>
+        				<dt>Strict</dt>
+        				<dd>Deprecated elements are forbidden</dd>
+        			</dl>
+        		</li>
+        	</ul>
+        </li>
+        <li class="delayed">HTML5
+        	<ul>
+        		<li>New elements</li>
+        	</ul>
+        </li>
     </ul>
 </div>
 
@@ -61,13 +137,66 @@
     <p>What goes between &lt; and &gt;</p>
     <ul>
         <li class="delayed"><code>&lt;p&gt;</code> Paragraph</li>
-        <li class="delayed"><code>&lt;strong&gt;</code> <strong>Strong!</strong></li>
+        <li class="delayed"><code>&lt;strong&gt;</code> <strong>Important!</strong></li>
         <li class="delayed"><code>&lt;div&gt;</code> Divisions of a document</li>
         <li class="delayed"><code>&lt;ul&gt;</code> <code>&lt;ol&gt;</code> <code>&lt;dl&gt;</code> Lists</li>
         <li class="delayed"><code>&lt;img /&gt;</code> Images</li>
         <li class="delayed"><code>&lt;br /&gt;</code> Breaks</li>
     </ul>
     <p class="delayed">Elements cannot be placed anywhere! How do we know where they can go? See the rules!</p>
+</div>
+
+<div class="slide">
+    <h2>HTML: Block Elements</h2>
+    <p>Block Elements start on a new line.</p>
+    <ul>
+        <li class="delayed"><code>&lt;h1&gt;</code> <code>&lt;h2&gt;</code> <code>&lt;h3&gt;</code> <code>&lt;h4&gt;</code> Headings</li>
+        <li class="delayed"><code>&lt;ol&gt;</code> <code>&lt;ul&gt;</code> <code>&lt;dl&gt;</code> List Definitions</li>
+        <li class="delayed"><code>&lt;div&gt;</code> Generic division containers</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>HTML: Inline Elements</h2>
+    <p>Inline Elements <strong>DO NOT</strong> start on a new line.</p>
+    <ul>
+        <li class="delayed"><code>&lt;a&gt;</code> Anchors (links)</li>
+        <li class="delayed"><code>&lt;img&gt;</code> Images</li>
+        <li class="delayed"><code>&lt;strong&gt;</code> Important emphasis</li>
+    </ul>
+</div>
+
+<div class="slide">
+	<h2>HTML: Nesting</h2>
+    <p>Semantics determine which elements can go where.</p>
+	<ul class="visualSupport">
+		<li class="delayed">
+			<img src="dom-tree.png" style="width:450px;" alt="Visual reference of DOM tree" />
+		</li>
+		<li class="delayed">
+			<pre>
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;sample title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="content"&gt;
+    &lt;h1&gt;Heading&lt;/h1&gt;
+    &lt;p&gt;paragraph
+      &lt;strong&gt;Important&lt;/strong&gt;
+      &lt;a href="page.html"&gt;Link&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;List Item 1
+        &lt;a href="page.html"&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+			</pre>
+		</li>
+	</ul>
 </div>
 
 <div class="slide">
@@ -78,6 +207,7 @@
         <li class="delayed"><code>src=""</code> <strong>Source of an external file</strong></li>
         <li class="delayed"><code>alt=""</code> Alternate representation of an element</li>
         <li class="delayed"><code>class=""</code> Classify an element</li>
+        <li class="delayed"><code>id=""</code> Uniquely identify an element</li>
     </ul>
     <pre class="delayed">
 &lt;a class="home" href="http://.../"&gt;
