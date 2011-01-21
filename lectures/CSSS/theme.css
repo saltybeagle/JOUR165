@@ -93,6 +93,8 @@ strong, b {
 		font-family: 'Helvetica Neue', Helvetica, sans-serif;
 		font-weight: 100;
 		font-size: 1.2in;
+		line-height:1.2in;
+		margin-bottom: 20px;
 	}
 	
 	.slide p,
@@ -133,7 +135,32 @@ strong, b {
 				color: #28bcbc;
 				padding-right: .2em;
 			}
-
+			
+		.slide > ul.visualSupport {
+					display:-moz-box;	
+					display:-webkit-box;	
+					display:box;
+					-moz-box-orient:horizontal;	
+					-webkit-box-orient:horizontal;
+					box-orient:horizontal;
+				}
+					.slide > ul.visualSupport li:before {
+						content: '';
+					}
+					
+					.slide > ul.visualSupport li {
+						-mozbox-flex:1;	
+						-webkit-box-flex:1;	
+						box-flex:1;	
+					}
+					.slide > ul.visualSupport li > img {
+						border:8px #FFF solid;
+						-moz-border-radius:10px;
+						-webkit-border-radius:10px;
+						border-radius:10px;
+						display:inline-block;
+					}
+					
 .slide .emphasis {
 	padding: .4em .5em .3em;
 	margin: .3em 0;

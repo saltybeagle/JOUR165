@@ -1,11 +1,12 @@
 html {
-    background: black url(m66_croman_big.jpg) bottom center;
+    background: black url(bg.jpg) bottom center;
 }
 
 #intro {
     background: rgba(0,0,0,.7);
     padding: 0;
     border: 0;
+    text-align: center;
 }
 
 #intro h1 {
@@ -20,17 +21,23 @@ html {
     text-align: center;
     font-size: 100%;
     line-height: .3;
-    color: rgba(0,0,0,.7);
+    color: rgba(255,255,255,.3);
     text-shadow: none;
     background: url(img/m66_croman_big.jpg) bottom;
     padding:.6em 0 0;
-    overflow: hidden;
+    bottom: 1.2em;
 }
-
-.slide dl dd {
+#intro .attribution a:after {
+	content: '';
+}
+.slide dl dd, .slide dl dd ul {
     margin-left:2em;
 }
-.slide dl dd:before {
+.slide dl dd ul li {
+	list-style: none;
+	font-weight: normal;
+}
+.slide dl dd:before, .slide dl dd li:before {
     content: '\279C';
     color: #28bcbc;
     padding-right: .2em;
