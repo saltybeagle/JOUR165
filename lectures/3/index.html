@@ -16,29 +16,62 @@
 
 <div class="slide">
     <h2>CSS Defined</h2>
-    <p></p>
+    <p>Cascading stylesheets adjust the presentation of your markup</p>
 </div>
 
 <div class="slide">
     <h2>CSS: Referencing</h2>
     <ul>
-        <li class="delayed">Inline</li>
-        <li class="delayed">Internal Stylesheet</li>
-        <li class="delayed">External Stylesheet</li>
+        <li class="delayed">Inline
+            <pre>&lt;h1 style="font-size:35px;"&gt;Hello&lt;/h1&gt;</pre>
+        </li>
+        <li class="delayed">Internal Stylesheet
+        <pre>
+&lt;style type="text/css"&gt;
+h1 {
+  font-size:35px;
+}
+&lt;/style&gt;
+        </pre>
+        </li>
+        <li class="delayed">External Stylesheet
+<pre>&lt;link rel="stylesheet" type="text/css" href="styles.css" /&gt;</pre></li>
     </ul>
 </div>
 
 <div class="slide">
     <h2>CSS Syntax</h2>
     <p>Selectors and attributes...</p>
+    <pre class="de1">selector <span class="br0">[</span><span class="sy0">,</span> selector2<span class="sy0">,</span> ...<span class="br0">]</span><span class="br0">[</span><span class="re2">:pseudo-</span>class<span class="br0">]</span> <span class="br0">{</span>
+  property<span class="sy0">:</span> value<span class="sy0">;</span>
+ <span class="br0">[</span>property2<span class="sy0">:</span> value2<span class="sy0">;</span>
+  ...<span class="br0">]</span>
+<span class="br0">}</span>
+<span class="coMULTI">/* comment */</span>
+</pre>
 </div>
 
 <div class="slide">
     <h2>CSS: Selectors</h2>
     <ul>
-        <li class="delayed">Element Name</li>
-        <li class="delayed">Class value</li>
-        <li class="delayed">ID value</li>
+        <li class="delayed">Element Name
+        <ul>
+            <li><code>h1</code>, <code>p</code>, <code>div</code> selects all the resective elements</li>
+        </ul>
+        </li>
+        <li class="delayed">Class value
+        <ul>
+            <li><code>.navigation</code>
+                selects <code>&lt;div class="navigation"&gt;...&lt;/div&gt;</code></li>
+                and <code>&lt;a class="navigation"&gt;...&lt;/a&gt;</code>
+                and any other <code>class="navigation"</code></li>
+        </ul>
+        </li>
+        <li class="delayed">ID value
+        <ul>
+            <li><code>#navigation</code> selects <code>&lt;div id="navigation"&gt;...&lt;/div&gt;</code></li>
+        </ul>
+        </li>
     </ul>
 </div>
 
